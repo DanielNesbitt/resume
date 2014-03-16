@@ -1,0 +1,77 @@
+%-----------------------------------------
+% Daniel Nesbitt
+% CV
+%-----------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,letterpaper,final]{moderncv}
+\usepackage{fontspec}
+\moderncvtheme[darkred]{classic}
+
+% DOCUMENT LAYOUT
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}
+\AtBeginDocument{\recomputelengths}
+% FONTS
+\usepackage[utf8]{inputenc}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+
+
+% Personal Information 
+\firstname{Daniel}
+\familyname{Nesbitt}
+\address{174 Morrison Ave.}{Somerville, MA 02144}
+\mobile{(706) 409-6961}
+\email{dan.nesbitt@gmail.com}
+
+\title{Daniel Nesbitt's Resume}
+
+\nopagenumbers{}
+
+\begin{document}
+
+\maketitle
+
+\section{Experience} 
+  \cventry{January 2011 -- Present}{Lead Software Engineer}{Genedata AG}{}{}{
+    \begin{itemize}
+      \item Delivered a major integration project that exceeded customer expectations and generated new revenue opportunities through project expansion and new customer interest
+      \item Used Agile management techniques to keep the 4 month project on track despite customer delays
+      \item Integrated new junior developers into the team record time with direct mentoring
+      \item Designed an all-encompassing solution that reduced user workflow times by 90\% by addressing issues beyond the functional requirements
+      \item Implemented a plugin infrastructure for integrating new analysis options in Javascript
+      \item Designed and provided technical oversight for the development of a web service layer as a Grails plugin for retieving available data as JSON with API security
+      \item Created a system for streaming informatics data which reduced the application memory footprint by 98\% in most cases and enabled more concurrent users
+    \end{itemize}
+  }
+  \cventry{}{Software Engineer}{Genedata AG}{}{}{
+    \begin{itemize}
+      \item Wrote a class-loading infrastructure across RMI and JNLP for sandboxing class hierarchies derived from third party plugins which eliminated the unpredictable defects and costly workarounds caused by class shadowing issues
+      \item Created an analysis for computing scoring for alternative splicing based on MiDAS method by Affymetrix with parallelism that scaled by 92\%
+      \item Wrote a visualization for displaying a heat map of alternative splicing activity with associated gene expression profiles in Java2D
+      \item Implemented a thread safe remote message condenser to avoid flooding client connections with pushed feedback
+    \end{itemize}
+  }
+  \cventry{January 2010 -- December 2010}{Software Engineer}{BioInquire LLC}{}{}{
+    \begin{itemize}
+      \item Initiated the design and implementation of a new quantitation algorithm
+      \item Reverse engineered and implemented a parser for a vendor file format avoiding the need to license a costly third party solution
+      \item Designed a new save file format to reduce space on disk by 40\% for a medium sized project while increasing read/write efficiency
+      \item Replaced an existing GUI model with an observer pattern based design to ensure consistent UI state
+      \item Developed a workflow automation feature by providing command line processing for YAML based project configurations that were directly edited by end users
+    \end{itemize}
+  }
+}
+
+\section{Education}
+  \cventry{2006 -- 2009}{Biochemistry \& Molecular Biology, University of Georgia}{}{}{Honors program, GPA: 3.95}{}
+
+\section{Computer Skills} 
+  \cvline{Languages:}{Java, Groovy, SQL, Scala, HTML, CSS, Javascript}
+  \cvline{Technologies:}{Grails, Oracle, PostgreSQL, Play, MySQL}
+\end{document}
